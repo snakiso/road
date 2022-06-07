@@ -101,11 +101,10 @@ body {
 }
 
 .main__theme p {
-  font-size: 14px;
   font-family: 'plumb-medium', sans-serif;
   margin: 0;
   width: 110px;
-  font-size: 15px;
+  font-size: 14px;
   background-color: #F5D1D4;
 }
 
@@ -118,7 +117,7 @@ body {
 .main__theme li {
   font-size: 13px;
   font-family: 'plumb-regular', sans-serif;
-  padding-top: 20px;
+  padding-top: 25px;
   width: 270px;
 }
 
@@ -143,7 +142,7 @@ body {
 }
 
 .main__contacts {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
 .main__contacts p {
@@ -164,7 +163,7 @@ body {
 }
 
 .main__partners {
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 .partners__wrapper {
@@ -202,6 +201,7 @@ body {
 }
 
 .innovation__wrapper p:last-child {
+  color: black;
   background-color: #F5D1D4;
   max-width: 26px;
 }
