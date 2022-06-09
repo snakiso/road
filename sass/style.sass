@@ -1,8 +1,3 @@
-body
- max-width: 1920px
- background-image: url('../img/bg.png')
- background-repeat: no-repeat
- height: 1040px
 @font-face 
  font-family: 'plumb-bold' 
  src: url('../fonts/PlumbBold.ttf')
@@ -24,3 +19,26 @@ body
 @import 'contacts'
 @import 'partners'
 @import 'innovation'
+body
+ max-width: 1920px
+ background-image: url('../img/bg.png')
+ background-repeat: no-repeat
+ background-position: center
+ margin: 0
+ height: 1040px
+@media screen and ( max-width: 1080px )
+ body
+  max-width: 1080px
+  background-image: url('../img/mobile_bg.png')
+  background-repeat: no-repeat
+  background-position: center
+  margin: 0
+  background-position-y: 0px
+@media screen and ( max-width: 768px )
+ body
+  margin: auto
+  max-width: 360px
+  background-image: url('../img/mobile_bg2.png')
+  background-repeat: no-repeat
+  background-position: center
+  background-position-y: 0px  

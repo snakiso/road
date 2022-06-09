@@ -1,10 +1,11 @@
 .main__contacts
- margin-top: 40px
+ margin-left: 180px
+ margin-top: 30px
+ grid-area: contacts
  p
   font-size: 13px
   font-family: 'plumb-regular', sans-serif 
-  background-color: #F5D1D4
-  width: 225px
+  max-width: 225px
  ul
   list-style: none
   padding: 0
@@ -12,3 +13,52 @@
    a
     text-decoration: none
     color: black
+@media screen and ( max-width: 1080px )
+ .main__contacts
+  margin: 100px 0 0 0
+  grid-area: contacts
+  background-color: #2FA6DD
+  p
+   padding-top: 50px
+   font-size: 24px
+   font-family: 'plumb-regular', sans-serif 
+   max-width: 500px
+   color: #FFFFFF
+   padding-left: 100px
+  ul
+   column-gap: 25px
+   padding: 0px 100px 60px 100px
+   display: flex
+   flex-wrap: wrap
+   list-style: none
+   li
+    a
+     color: #FFFFFF
+     font-size: 28px
+
+
+@media screen and ( max-width: 768px )
+ .main__contacts
+  max-width: 360px   
+  margin: 0 
+  grid-area: contacts
+  background-color: #2FA6DD
+  p
+   margin: 0   
+   padding-top: 20px
+   font-size: 12px
+   font-family: 'plumb-regular', sans-serif 
+   max-width: 500px
+   color: #FFFFFF
+   padding-left: 25px
+  ul
+   column-gap: 5px
+   padding: 0 25px 0 25px
+   display: flex
+   flex-wrap: wrap
+   list-style: none
+   li
+    a
+     color: #FFFFFF
+     font-size: 12px     
+     

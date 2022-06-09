@@ -1,9 +1,11 @@
 .header
- width: 745px
- margin: 30px 0 0 630px
+ max-width: 1105px
+ margin: 15px auto
  display: flex
  justify-content: space-between
  &__download
+  margin-top: 13px
+  margin-right: 180px
   display: flex
   flex-direction: column
  &__download-link
@@ -11,6 +13,67 @@
   color: black
   font-family: 'plumb-bold', sans-serif 
  p
+  margin-left: 180px
   font-size: 13px
-  margin: 0
-  font-family: 'plumb-regular', sans-serif 
+  font-family: 'plumb-regular', sans-serif
+ &__download-mobile  
+  display: none
+
+@media screen and ( max-width: 1080px ) 
+ .header
+  margin-top: 30px
+  max-width: 1080px
+  p
+   display: none
+  &__download
+   display: none
+  &__download-mobile  
+   display: flex
+   margin-left: auto
+   margin-right: auto
+   column-gap: 10px
+ .mobile__download-link
+  font-size: 18px 
+  display: block
+  text-decoration: none
+  color: #FFFFFF
+  transform: skew(30deg) 
+ .download-bg
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 320px
+  height: 66px
+  transform: skew(330deg)
+  background: #39A3DC
+
+
+@media screen and ( max-width: 768px ) 
+ .header
+  margin-top: 10px
+  max-width: 360px
+  margin-bottom: 0
+  p
+   display: none
+  &__download
+   display: none
+  &__download-mobile  
+   display: flex
+   margin-left: auto
+   margin-right: auto
+   column-gap: 10px
+ .mobile__download-link
+  font-size: 8px 
+  display: block
+  text-decoration: none
+  color: #FFFFFF
+  transform: skew(30deg) 
+ .download-bg
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 110px
+  height: 22px
+  transform: skew(330deg)
+  background: #39A3DC  
+  

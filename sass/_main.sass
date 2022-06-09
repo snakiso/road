@@ -1,44 +1,49 @@
 .main
- width: 745px
- margin: 30px 0 0 630px
+ max-width: 1105px
+ margin: auto
  .conference
+  grid-area: conference
+  margin-bottom: 0px
   font-family: 'plumb-medium', sans-serif
   font-weight: 400
   font-size: 26px
-  background-color: #F5D1D4
   width: 168px
+  margin-left: 180px
  &__information
+  grid-area: information 
   display: flex
   justify-content: space-between
- h1
-  font-family: 'plumb-bold', sans-serif
-  margin: 0
-  max-width: 427px
-  font-weight: bold
-  font-size: 50px
-  line-height: 50px
- &__theme 
   h2
+   display: none
+ img:first-child
+  max-width: 600px
+ &__theme  
+  margin-left: 180px  
+  h2
+   margin-top: 45px
    font-family: 'plumb-bold', sans-serif
    max-width: 420px
    color: #2FA6DD
    font-size: 38px
   p
+   font-weight: 300
    font-family: 'plumb-medium', sans-serif 
    margin: 0
-   width: 110px
    font-size: 14px
-   background-color: #F5D1D4
   ul
    margin: 0
    list-style-type: '-'
    padding-left: 4px
   li
+   font-weight: 400
    font-size: 13px
    font-family: 'plumb-regular', sans-serif 
-   padding-top: 25px
+   padding-top: 20px
    width: 270px
+.information__block
+ margin-top: 35px   
 .information__date
+ margin-right: 180px
  font-family: 'plumb-bold', sans-serif 
  font-size: 29px
  margin-top: 0
@@ -46,9 +51,121 @@
  font-family: 'plumb-medium', sans-serif   
  width: 95px
  font-size: 26px
- background-color: #F5D1D4
  margin: 0
 .information__block p:last-child
  font-size: 20px
  margin: 0
- font-family: 'plumb-regular', sans-serif 
+ font-family: 'plumb-regular', sans-serif
+.information__date-mobile
+ display: none   
+.information__place-mobile
+ display: none
+
+@media screen and ( max-width: 1080px ) 
+ .main
+  display: grid  
+  max-width: 1080px
+  grid-template-areas: 'conference' 'information' 'theme' 'partners' 'contacts'
+  .conference
+   font-size: 30px
+   margin-left: 350px
+   margin-top: 80px
+  img:first-child
+   max-width: 872px
+   margin-left: 90px
+  &__information
+   flex-direction: column 
+   h2
+    display: block
+    font-family: 'plumb-bold', sans-serif
+    max-width: 550px
+    color: #2FA6DD
+    font-size: 50px
+    margin-left: 350px
+    margin-top: 65px
+  &__theme
+   grid-area: theme  
+   margin-left: 350px
+   margin-bottom: 125px  
+   p:not(:last-child)
+    font-family: 'plumb-medium', sans-serif   
+    font-size: 32px
+    margin: 0
+   p:nth-child(5)
+    font-size: 24px
+    margin-top: 110px   
+   h3
+    font-size: 30px  
+    margin-top: 60px  
+    margin-bottom: 0 
+   h2
+    display: none
+   li
+    font-size: 22px
+    padding-top: 50px
+    width: 500px    
+ .information__block
+   display: none   
+ .information__date-mobile 
+   display: block 
+   font-family: 'plumb-bold', sans-serif 
+   font-size: 29px
+   margin-top: 0
+ .information__place-mobile
+   display: block
+
+
+@media screen and ( max-width: 768px ) 
+ .main
+  display: grid  
+  max-width: 360px
+  grid-template-areas: 'conference' 'information' 'theme' 'partners' 'contacts'
+  .conference
+   font-size: 10px
+   margin-left: 85px
+   margin-top: 25px
+  img:first-child
+   max-width: 290px
+   margin-left: 0px
+  &__information
+   flex-direction: column 
+   h2
+    display: block
+    font-family: 'plumb-bold', sans-serif
+    max-width: 250px
+    color: #2FA6DD
+    font-size: 18px
+    margin-left: 85px
+    margin-top: 20px
+  &__theme
+   grid-area: theme  
+   margin-left: 85px
+   margin-bottom: 0px  
+   p:not(:last-child)
+    font-family: 'plumb-medium', sans-serif   
+    font-size: 12px
+    margin: 0
+   p:nth-child(5)
+    font-size: 12px
+    margin-top: 0px   
+   h3
+    font-size: 12px  
+    margin-top: 0px  
+    margin-bottom: 0 
+   h2
+    display: none
+   li
+    font-size: 10px
+    padding-top: 20px
+    width: 177px    
+ .information__block
+   display: none   
+ .information__date-mobile 
+   display: block 
+   font-family: 'plumb-bold', sans-serif 
+   font-size: 12px
+   margin-top: 0
+ .information__place-mobile
+   display: block  
+
+ 

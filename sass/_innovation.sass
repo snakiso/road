@@ -1,6 +1,8 @@
 .main__innovation
- margin-top: 30px
+ margin-top: 25px
+ margin-left: 180px
 .innovation__wrapper
+ max-width: 700px
  display: flex
  justify-content: space-between
  p
@@ -9,6 +11,34 @@
   font-size: 11px
   color: #999999
  p:last-child
-  color: black
-  background-color: #F5D1D4 
-  max-width: 26px
+
+
+@media screen and ( max-width: 1080px )
+ .main__innovation
+  margin: 60px auto 0 auto
+  .innovation__wrapper
+   padding: 0 15px 0 15px
+   max-width: 900px
+   display: flex
+   justify-content: space-between
+   column-gap: 50px 
+  p
+   font-size: 14px
+   color: black
+   max-width: 270px
+
+
+@media screen and ( max-width: 768px )
+ .main__innovation
+  max-width: 360px
+  margin: 20px 0 0 0
+  .innovation__wrapper
+   padding: 0 
+   max-width: 900px
+   display: flex
+   justify-content: space-between
+   column-gap: 50px 
+  p
+   font-size: 6px
+   color: black
+   max-width: 270px   
