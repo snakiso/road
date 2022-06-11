@@ -690,6 +690,7 @@ body {
     background-position: center;
     margin: 0;
     background-position-y: 0px;
+    background-position-y-background-size: auto;
   }
 }
 
