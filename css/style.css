@@ -109,7 +109,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .header {
     margin-top: 10px;
     max-width: 360px;
@@ -271,8 +271,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 90px;
-    padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 50px;
   }
   .main__information img:first-child {
     max-width: 872px;
@@ -326,7 +327,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .main {
     display: -ms-grid;
     display: grid;
@@ -335,7 +336,7 @@
   }
   .main .conference {
     font-size: 10px;
-    margin-left: 85px;
+    margin-left: 87px;
     margin-top: 25px;
   }
   .main img:first-child {
@@ -343,6 +344,7 @@
     margin-left: 0px;
   }
   .main__information {
+    margin: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -437,9 +439,10 @@
     padding-left: 100px;
   }
   .main__contacts ul {
+    max-width: 700px;
     -webkit-column-gap: 25px;
             column-gap: 25px;
-    padding: 0px 100px 60px 100px;
+    margin-left: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -453,7 +456,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .main__contacts {
     max-width: 360px;
     margin-top: 20px;
@@ -470,9 +473,10 @@
     padding-left: 25px;
   }
   .main__contacts ul {
+    margin: 0;
     -webkit-column-gap: 5px;
             column-gap: 5px;
-    padding: 0 25px 0 25px;
+    padding: 0 25px 25px 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -558,7 +562,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .main__partners {
     max-width: 360px;
     margin-top: 240px;
@@ -630,17 +634,17 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-column-gap: 190px;
-            column-gap: 190px;
+    -webkit-column-gap: 110px;
+            column-gap: 110px;
   }
   .main__innovation p {
     font-size: 14px;
     color: black;
-    max-width: 270px;
+    max-width: 180px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   .main__innovation {
     max-width: 360px;
     margin: 20px 0 0 0;
@@ -689,7 +693,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 840px) {
   body {
     margin: auto;
     max-width: 360px;
