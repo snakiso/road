@@ -266,6 +266,7 @@
     margin-top: 80px;
   }
   .main__information {
+    max-width: 880px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -543,8 +544,11 @@
     font-family: 'plumb-regular', sans-serif;
     font-size: 20px;
   }
+  .partner {
+    max-width: 380px;
+  }
   .partners__logo {
-    width: 380px;
+    width: 100%;
   }
   .partners__logo1 {
     width: 280px;
