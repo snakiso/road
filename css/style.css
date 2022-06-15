@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'plumbM';
-  src: url("../fonts/Plumb/PlumbMediumC.ttf");
+  src: url("../fonts/Plumb/plumb-medium.otf");
   font-weight: 500;
 }
 
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'plumbR';
-  src: url("../fonts/Plumb/plumbcondensed-regular.ttf");
+  src: url("../fonts/Plumb/plumb-regular.otf");
   font-weight: 400;
 }
 
@@ -84,6 +84,7 @@
             column-gap: 10px;
   }
   .mobile__download-link {
+    font-family: 'plumbR', sans-serif;
     font-size: 18px;
     display: block;
     text-decoration: none;
@@ -165,7 +166,7 @@
   font-family: 'plumbM', sans-serif;
   grid-area: conference;
   margin-bottom: 0px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 26px;
   width: 168px;
   margin-left: 180px;
@@ -279,6 +280,7 @@
     max-width: 872px;
   }
   .main__information h2 {
+    font-family: 'plumb', sans-serif;
     display: block;
     max-width: 590px;
     color: #2FA6DD;
@@ -294,15 +296,24 @@
     margin-bottom: 125px;
   }
   .main__theme p:not(:last-child) {
+    font-family: 'plumbM', sans-serif;
     font-size: 32px;
     margin: 0;
+  }
+  .main__theme p:nth-child(3) {
+    margin-top: 15px;
+  }
+  .main__theme p:nth-child(4) {
+    font-size: 24px;
+    font-family: 'plumbR', sans-serif;
   }
   .main__theme p:nth-child(5) {
     font-size: 24px;
     margin-top: 110px;
   }
   .main__theme h3 {
-    font-size: 30px;
+    font-family: 'plumb', sans-serif;
+    font-size: 40px;
     margin-top: 60px;
     margin-bottom: 0;
   }
@@ -352,6 +363,7 @@
     padding: 0;
   }
   .main__information h2 {
+    font-family: 'plumb', sans-serif;
     display: block;
     max-width: 250px;
     color: #2FA6DD;
@@ -431,15 +443,17 @@
     background-color: #2FA6DD;
   }
   .main__contacts p {
+    letter-spacing: 1px;
     padding-top: 50px;
     font-size: 24px;
-    font-family: 'plumb-regular', sans-serif;
+    font-family: 'plumbM', sans-serif;
     max-width: 500px;
     color: #FFFFFF;
     padding-left: 100px;
   }
   .main__contacts ul {
-    max-width: 700px;
+    padding-bottom: 50px;
+    max-width: 800px;
     -webkit-column-gap: 25px;
             column-gap: 25px;
     margin-left: 100px;
@@ -485,6 +499,7 @@
     list-style: none;
   }
   .main__contacts ul li a {
+    letter-spacing: -1px;
     color: #FFFFFF;
     font-size: 12px;
   }
@@ -621,6 +636,10 @@
   color: #999999;
 }
 
+.innovation-text {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1080px) {
   .main__innovation {
     margin: 60px auto 0 auto;
@@ -650,7 +669,7 @@
     margin: 20px 0 0 0;
   }
   .main__innovation .innovation__wrapper {
-    padding: 0;
+    padding: 0 10px;
     max-width: 900px;
     display: -webkit-box;
     display: -ms-flexbox;
